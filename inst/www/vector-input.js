@@ -154,6 +154,7 @@
     }
 
   })
+
   Shiny.inputBindings.register(binding)
 
 })();
