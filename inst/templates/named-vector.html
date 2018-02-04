@@ -1,0 +1,35 @@
+<div class = "form-group shiny-input-container">
+
+    <div class = "row">
+        <div class = "col-sm-7">
+            <label>{{nameLabel}}</label>
+        </div>
+        <div class = "col-sm-3">
+            <label>{{valueLabel}}</label>
+        </div>
+        <div class = "col-sm-2">
+            <label>Remove</label>
+        </div>
+    </div>
+
+    {{#each values}}
+    <div class = "row vector-input-row">
+        <div class = "col-sm-7">
+            <input id = "name-{{../id}}-{{@index}}" type = "text" class = "form-control vector-input-name" value = "{{name}}" />
+        </div>
+        <div class = "col-sm-3">
+            <input id = "value-{{../id}}-{{@index}}" type = "{{../type}}" class = "form-control vector-input-value" value = "{{value}}" />
+        </div>
+        <div class = "col-sm-2">
+            <button id = "del-{{../id}}-{{@index}}" type = "button" class = "btn btn-link vector-input-button" style = "padding-right: 0px;">x</button>
+        </div>
+    </div>
+    {{/each}}
+
+    <div class = "row">
+        <div class = "col-sm-12">
+            <button id = "add-{{id}}" type = "button" class = "btn btn-link vector-input-button" style = "padding-left: 0px;">New</button>
+        </div>
+    </div>
+
+</div>

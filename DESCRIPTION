@@ -1,11 +1,14 @@
 Package: vectorInput
 Type: Package
-Title: What the Package Does (Title Case)
+Title: A shiny vector input widget
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+Authors@R: person("Gregg", "Whitworth", email = "whitworthg@wlu.edu", role = c("aut", "cre"))
+Description: A shiny input widget that returns a (possibly named) vector of values.
 Encoding: UTF-8
 LazyData: true
+Depends: 
+  R (>= 3.3.3),
+  shiny,
+  htmltools
+License: GPL-3
+RoxygenNote: 6.0.1
